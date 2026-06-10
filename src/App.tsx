@@ -83,20 +83,20 @@ export default function App() {
       <section style={{ background:'#F9FAFB', padding:'90px 7%' }}>
         <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#E5E7EB' }} className="problem-grid">
   {problem.cards.map((c,i)=>{
-    const isYellow = i % 2 === 0;
+    const isDark = i % 2 !== 0;
     return (
       <div key={i} style={{
-        background: isYellow ? '#FFCE00' : '#0F1B2D',
+        background: isDark ? '#0F1B2D' : '#FFFFFF',
         padding:'28px 24px',
       }}>
         <p style={{
           fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900,
           fontSize:18, textTransform:'uppercase', letterSpacing:0.3, marginBottom:10,
-          color: isYellow ? '#0A0A0A' : '#FFFFFF',
+          color: isDark ? '#FFFFFF' : '#0A0A0A',
         }}>{c.title}</p>
         <p style={{
           fontSize:14, lineHeight:1.65, fontFamily:'Inter,sans-serif',
-          color: isYellow ? '#374151' : '#9CA3AF',
+          color: isDark ? '#9CA3AF' : '#6B7280',
         }}>{c.desc}</p>
       </div>
     );
