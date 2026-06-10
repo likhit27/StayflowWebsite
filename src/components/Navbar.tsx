@@ -9,7 +9,7 @@ interface NavbarProps {
 const NAV_LINKS = [
   { label: 'Platform', href: '#platform' },
   { label: 'Services', href: '#services' },
-  { label: 'Why StayFlow', href: '#why' },
+  { label: 'Why StayFlo', href: '#why' },
   { label: 'Roadmap', href: '#roadmap' },
 ];
 
@@ -34,7 +34,7 @@ export default function Navbar({ onCTA }: NavbarProps) {
       <div style={{ maxWidth: 1160, margin: '0 auto', padding: '0 24px', height: 68, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <a href="#" style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <span style={{ width: 32, height: 32, background: '#FFCE00', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 900, fontSize: 16, color: '#0A0A0A' }}>SF</span>
-          <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 900, fontSize: 22, color: '#0A0A0A', letterSpacing: 0.5, textTransform: 'uppercase' }}>StayFlow</span>
+          <span style={{ fontFamily: 'Barlow Condensed, sans-serif', fontWeight: 900, fontSize: 22, color: '#0A0A0A', letterSpacing: 0.5, textTransform: 'uppercase' }}>StayFlo</span>
         </a>
 
         <div className="desktop-nav" style={{ display: 'flex', alignItems: 'center', gap: 32 }}>

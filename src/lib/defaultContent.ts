@@ -7,7 +7,7 @@ export const DEFAULT_CONTENT = {
     headline_line1: 'Stop Losing',
     headline_line2: 'Revenue',
     headline_accent: 'to OTAs.',
-    subtext: 'StayFlow gives Indian hotels a complete tech stack — Booking Engine, Payments, CRM, PMS, Channel Manager and Growth Marketing — from one platform, at a fraction of the cost.',
+    subtext: 'StayFlo gives Indian hotels a complete tech stack — Booking Engine, Payments, CRM, PMS, Channel Manager and Growth Marketing — from one platform, at a fraction of the cost.',
     cta_demo: 'Book a Demo',
     cta_audit: 'Free Tech Audit',
     stat1_val: '₹3–5 Cr',
@@ -48,28 +48,28 @@ export const DEFAULT_CONTENT = {
   },
 
   why: {
-    section_label: 'Why StayFlow',
+    section_label: 'Why StayFlo',
     headline: 'Built for Indian Hotels. Not Adapted for Them.',
-    subtext: "Global hotel software was not designed for UPI payments, OTA-first markets, GST compliance or the Indian property chain model. StayFlow is.",
+    subtext: "Global hotel software was not designed for UPI payments, OTA-first markets, GST compliance or the Indian property chain model. StayFlo is.",
     points: [
       { title: 'One Vendor Instead of Ten', desc: 'Booking engine, payments, CRM, PMS, channel manager, marketing — all connected, all from us.' },
       { title: 'Payments-First Design', desc: "UPI, Razorpay, GST invoicing, T+1 settlement, EMI. Built for India's mobile-first payment landscape." },
       { title: 'Own Your Guest Relationship', desc: 'First-party data, WhatsApp automation, loyalty — the guest relationship belongs to your hotel, not the OTA.' },
     ],
-    roi_title: 'The Business Case for StayFlow',
+    roi_title: 'The Business Case for StayFlo',
     roi_rows: [
       { metric: '₹3–5 Cr', label: 'Year 1 commission savings', sub: 'Shifting 15% of bookings from OTAs to direct' },
       { metric: '22%', label: 'Direct booking conversion uplift', sub: 'Industry average replacing 3rd-party engines' },
       { metric: '2.4×', label: 'Repeat guest rate with CRM', sub: 'vs baseline without guest data management' },
       { metric: '₹180', label: 'Cost per direct booking', sub: 'vs ₹1,800–4,500 via OTA after commission' },
-      { metric: '7 → 15', label: 'Properties on one stack', sub: 'StayFlow scales with your pipeline' },
+      { metric: '7 → 15', label: 'Properties on one stack', sub: 'StayFlo scales with your pipeline' },
     ],
   },
 
   services: {
     section_label: 'Services',
     headline: 'Everything Your Hotel Needs to Grow',
-    subtext: "From setup to ongoing growth — StayFlow's team handles implementation, training and marketing so your team can focus on guests.",
+    subtext: "From setup to ongoing growth — StayFlo's team handles implementation, training and marketing so your team can focus on guests.",
     cards: [
       { title: 'Hotel Website Development', desc: 'Speed-optimised, SEO-ready hotel websites that convert visitors into direct bookers.' },
       { title: 'OTA Integration', desc: 'Connect to MakeMyTrip, Goibibo, Booking.com, Expedia and manage from one dashboard.' },
@@ -84,7 +84,7 @@ export const DEFAULT_CONTENT = {
     section_label: 'Roadmap',
     headline: 'From Gap to Growth: 12 Months',
     phases: [
-      { phase: 'Phase 1', timeline: 'Month 1–3', note: 'Live in 3–4 weeks', items: ['Booking Engine (Native StayFlow)', 'Payment Gateway (Razorpay/PayU)', 'CRM Setup and Guest Import', 'Brand Website Audit and Fix'] },
+      { phase: 'Phase 1', timeline: 'Month 1–3', note: 'Live in 3–4 weeks', items: ['Booking Engine (Native StayFlo)', 'Payment Gateway (Razorpay/PayU)', 'CRM Setup and Guest Import', 'Brand Website Audit and Fix'] },
       { phase: 'Phase 2', timeline: 'Month 3–6', note: 'Full-stack control', items: ['Hotel PMS Deployment', 'Channel Manager and OTA Sync', 'Rate Parity Dashboard', 'Staff Training and Onboarding'] },
       { phase: 'Phase 3', timeline: 'Month 6–12', note: 'Top-of-funnel ownership', items: ['Google Hotel Ads Launch', 'Social Media Marketing', 'SEO and Content Engine', 'Loyalty and CRM Automation'] },
     ],
@@ -108,7 +108,7 @@ export const DEFAULT_CONTENT = {
 
   footer: {
     tagline: 'Your Full-Stack Hotel Tech Partner',
-    copyright: '© 2026 StayFlow. All Rights Reserved.',
+    copyright: '© 2026 StayFlo. All Rights Reserved.',
   },
 };
 
