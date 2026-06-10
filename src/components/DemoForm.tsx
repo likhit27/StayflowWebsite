@@ -137,12 +137,12 @@ export default function DemoForm({ type, onClose }: Props) {
           ) : (
             <form onSubmit={handleSubmit} style={{ display:'flex', flexDirection:'column', gap:16 }}>
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:14 }} className="form-row">
-                <div><label style={lbl}>Full Name</label><input type="text" placeholder="Rahul Sharma" value={form.name} onChange={e=>set('name',e.target.value)} style={inp}/></div>
-                <div><label style={lbl}>Hotel / Company</label><input type="text" placeholder="Mosaic Hotels" value={form.company} onChange={e=>set('company',e.target.value)} style={inp}/></div>
+                <div><label style={lbl}>Full Name</label><input type="text" placeholder="Full Name" value={form.name} onChange={e=>set('name',e.target.value)} style={inp}/></div>
+                <div><label style={lbl}>Hotel / Company</label><input type="text" placeholder="Hotel / Company Name" value={form.company} onChange={e=>set('company',e.target.value)} style={inp}/></div>
               </div>
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:14 }} className="form-row">
-                <div><label style={lbl}>Mobile Number</label><input type="tel" placeholder="9876543210" value={form.mobile} onChange={e=>set('mobile',e.target.value)} style={inp} maxLength={10}/></div>
-                <div><label style={lbl}>Email Address</label><input type="email" placeholder="you@hotel.com" value={form.email} onChange={e=>set('email',e.target.value)} style={inp}/></div>
+                <div><label style={lbl}>Mobile Number</label><input type="tel" placeholder="Mobile Number" value={form.mobile} onChange={e=>set('mobile',e.target.value)} style={inp} maxLength={10}/></div>
+                <div><label style={lbl}>Email Address</label><input type="email" placeholder="Email" value={form.email} onChange={e=>set('email',e.target.value)} style={inp}/></div>
               </div>
               <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:14 }} className="form-row">
                 <div>
