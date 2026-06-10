@@ -44,9 +44,9 @@ export default function Navbar({ onCTA }: NavbarProps) {
         </div>
 
         <div className="desktop-nav" style={{ display: 'flex', gap: 10 }}>
-          <button onClick={() => onCTA('audit')} style={{ padding: '9px 18px', border: '1.5px solid #E5E7EB', borderRadius: 8, background: '#fff', cursor: 'pointer', fontSize: 13, fontWeight: 700, fontFamily: 'Barlow, sans-serif', color: '#374151' }}>
-            Free Audit
-          </button>
+          <button onClick={() => onCTA('audit')} style={{ padding: '9px 18px', border: 'none', borderRadius: 8, background: '#0F1B2D', cursor: 'pointer', fontSize: 13, fontWeight: 700, fontFamily: 'Barlow, sans-serif', color: '#FFFFFF' }}>
+  Free Tech Audit
+</button>
           <button onClick={() => onCTA('demo')} style={{ padding: '10px 20px', background: '#FFCE00', border: 'none', borderRadius: 8, cursor: 'pointer', fontSize: 13, fontWeight: 800, fontFamily: 'Barlow, sans-serif', color: '#0A0A0A' }}>
             Book a Demo
           </button>

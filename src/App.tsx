@@ -81,19 +81,27 @@ export default function App() {
 
       {/* PROBLEM */}
       <section style={{ background:'#F9FAFB', padding:'90px 7%' }}>
-        <div style={{ maxWidth:1160, margin:'0 auto' }}>
-          <span style={secLabel()}>{problem.section_label}</span>
-          <h2 style={{ ...dHead('clamp(36px,5vw,60px)',14), maxWidth:640 }}>{problem.headline}</h2>
-          <p style={{ ...body, maxWidth:560, marginBottom:56 }}>{problem.subtext}</p>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#E5E7EB' }} className="problem-grid">
-            {problem.cards.map((c,i)=>(
-              <div key={i} style={{ background:'#fff', padding:'28px 24px' }}>
-                <p style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, textTransform:'uppercase', letterSpacing:0.3, marginBottom:10 }}>{c.title}</p>
-                <p style={{ fontSize:14, color:'#6B7280', lineHeight:1.65, fontFamily:'Inter,sans-serif' }}>{c.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'#E5E7EB' }} className="problem-grid">
+  {problem.cards.map((c,i)=>{
+    const isYellow = i % 2 === 0;
+    return (
+      <div key={i} style={{
+        background: isYellow ? '#FFCE00' : '#0F1B2D',
+        padding:'28px 24px',
+      }}>
+        <p style={{
+          fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900,
+          fontSize:18, textTransform:'uppercase', letterSpacing:0.3, marginBottom:10,
+          color: isYellow ? '#0A0A0A' : '#FFFFFF',
+        }}>{c.title}</p>
+        <p style={{
+          fontSize:14, lineHeight:1.65, fontFamily:'Inter,sans-serif',
+          color: isYellow ? '#374151' : '#9CA3AF',
+        }}>{c.desc}</p>
+      </div>
+    );
+  })}
+</div>
       </section>
 
       {/* PLATFORM */}
@@ -237,7 +245,7 @@ export default function App() {
       <footer style={{ background:'#0A0A0A', padding:'36px 7%', display:'flex', justifyContent:'space-between', alignItems:'center', flexWrap:'wrap', gap:16 }}>
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <span style={{ width:30, height:30, background:'#FFCE00', borderRadius:7, display:'flex', alignItems:'center', justifyContent:'center', fontFamily:'Barlow Condensed,sans-serif', fontWeight:900, fontSize:14 }}>SF</span>
-          <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:'#fff', textTransform:'uppercase', letterSpacing:0.5 }}>StayFlow</span>
+          <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:900, fontSize:18, color:'#fff', textTransform:'uppercase', letterSpacing:0.5 }}>StayFlo</span>
           <span style={{ color:'#374151', fontSize:13 }}>{footer.tagline}</span>
         </div>
         <p style={{ color:'#374151', fontSize:13 }}>{footer.copyright}</p>
