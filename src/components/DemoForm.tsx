@@ -31,23 +31,23 @@ async function submitToNotion(data: FormData, tag: string): Promise<void> {
   }
 }
 
-async function sendTelegram(data: FormData, tag: string): Promise<void> {
-  const text =
-    `*New ${tag} Request — StayFlow*\n\n` +
-    `Name: ${data.name}\nCompany: ${data.company}\n` +
-    `Mobile: ${data.mobile}\nEmail: ${data.email}\n` +
-    `Date: ${data.date}\nTime: ${data.time}\n\n#${tag.toLowerCase()}`;
+// async function sendTelegram(data: FormData, tag: string): Promise<void> {
+//   const text =
+//     `*New ${tag} Request — StayFlow*\n\n` +
+//     `Name: ${data.name}\nCompany: ${data.company}\n` +
+//     `Mobile: ${data.mobile}\nEmail: ${data.email}\n` +
+//     `Date: ${data.date}\nTime: ${data.time}\n\n#${tag.toLowerCase()}`;
 
-  const res = await fetch(
-    `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, parse_mode: 'Markdown' }),
-    }
-  );
-  if (!res.ok) { const e = await res.json(); throw new Error(e.description); }
-}
+//   const res = await fetch(
+//     `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+//     {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text, parse_mode: 'Markdown' }),
+//     }
+//   );
+//   if (!res.ok) { const e = await res.json(); throw new Error(e.description); }
+// }
 
 const EMPTY: FormData = { name:'', company:'', mobile:'', email:'', date:'', time:'' };
 
