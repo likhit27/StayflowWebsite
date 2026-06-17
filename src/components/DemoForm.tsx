@@ -7,8 +7,8 @@ interface Props { type: FormType; onClose: () => void; }
 const TIME_SLOTS = ['9:00 AM','10:00 AM','11:00 AM','12:00 PM','2:00 PM','3:00 PM','4:00 PM','5:00 PM','6:00 PM'];
 
 // Telegram still called directly from browser — it allows CORS
-const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN as string;
-const TELEGRAM_CHAT_ID   = import.meta.env.VITE_TELEGRAM_CHAT_ID as string;
+// const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN as string;
+// const TELEGRAM_CHAT_ID   = import.meta.env.VITE_TELEGRAM_CHAT_ID as string;
 
 // Notion is now called via /api/notion (Vercel serverless) to avoid CORS
 async function submitToNotion(data: FormData, tag: string): Promise<void> {
@@ -76,7 +76,8 @@ export default function DemoForm({ type, onClose }: Props) {
     if (!validate()) return;
     setStatus('loading');
     try {
-      await Promise.all([submitToNotion(form, tag), sendTelegram(form, tag)]);
+      await submitToNotion(form, tag);
+      // await Promise.all([submitToNotion(form, tag), sendTelegram(form, tag)]);
       setStatus('success');
     } catch (err) {
       console.error(err);
